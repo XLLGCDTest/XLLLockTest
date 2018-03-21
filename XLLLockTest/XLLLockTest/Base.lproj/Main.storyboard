@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uke-kj-GPx">
+                                <rect key="frame" x="147.5" y="316" width="80" height="35"/>
+                                <color key="backgroundColor" red="1" green="0.73725490199999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bR6-b4-eLF"/>
+                                    <constraint firstAttribute="height" constant="35" id="oRi-2G-ee6"/>
+                                </constraints>
+                                <state key="normal" title="click"/>
+                                <connections>
+                                    <action selector="clickAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YbY-Vf-sLn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vme-IU-iRF">
+                                <rect key="frame" x="102.5" y="386" width="170" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="0lr-cu-2aD"/>
+                                    <constraint firstAttribute="width" constant="170" id="GTx-iX-W4e"/>
+                                </constraints>
+                                <state key="normal" title="点击测试是否线程阻塞"/>
+                                <connections>
+                                    <action selector="testThread:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EH7-JW-4fa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Uke-kj-GPx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ds-D5-B9t"/>
+                            <constraint firstItem="vme-IU-iRF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qvn-yM-ERN"/>
+                            <constraint firstItem="vme-IU-iRF" firstAttribute="top" secondItem="Uke-kj-GPx" secondAttribute="bottom" constant="35" id="T3u-Oi-uqA"/>
+                            <constraint firstItem="Uke-kj-GPx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cF8-PW-nrR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
